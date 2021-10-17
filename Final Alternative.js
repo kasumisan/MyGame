@@ -17,16 +17,13 @@ user = parseInt(prompt("Введите ЦЕЛОЕ число от 1 до 3, гд
 		return(user)
 		}
 }
-
+do{
 user1 = userNumb(user1);
 if (user1 !== 0) {
     user2 = userNumb(user2);}
 if ((user2 !==0)&&(user1 !==0)){
     alert("ПРИСТУПИМ");
-  //alert(typeof user1);
-//alert(typeof(user2));
-//alert (`элемент массива ${winners [user1][user2]}`);
-//win = winners [user1][user2];
+  
     if(user1 == user2){
 	
 	    mes= "Ничья"
@@ -41,7 +38,8 @@ if ((user2 !==0)&&(user1 !==0)){
             mes= "выйграл user2";
 }
      alert(mes);
-     alert("Спасибо за игру. Будем рады поиграть ещё!");
+     alert("Играем дальше!");
       }
 else {
 alert("Спасибо за игру. Будем рады поиграть ещё!");}
+} while (user1!==0 && user2!==0);
